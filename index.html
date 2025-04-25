@@ -5,44 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finn Brown | Software Engineer</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #2980b9;
+            --background-color: #f4f6f8;
+            --text-color: #333;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        main {
             max-width: 800px;
             margin: auto;
-            padding: 2em;
-            background: #f9f9f9;
-            color: #333;
+            padding: 2rem 1rem;
         }
-        h1 {
-            color: #2c3e50;
+
+        section {
+            margin-bottom: 2rem;
         }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.3rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
         a {
-            color: #2980b9;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #ddd;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <h1>Finn Brown</h1>
-    <p>hire me pls</p>
+    <header>
+        <h1>Finn Brown</h1>
+        <p>Software Engineering Student • Outdoor Enthusiast • Project Builder</p>
+    </header>
 
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="#wino">WINO – Wine Information App</a></li>
-        <li><a href="#tempmod">Temperature Storage Module</a></li>
-        <li><a href="#hangman">IR Hangman Game</a></li>
-    </ul>
+    <main>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#wino">WINO – Wine Information App</a></li>
+                <li><a href="#tempmod">Temperature Storage Module</a></li>
+                <li><a href="#hangman">IR Hangman Game</a></li>
+            </ul>
+        </section>
 
-    <h2 id="wino">WINO – Wine Information App</h2>
-    <p>A desktop app for organizing and displaying wine information. Built using JavaFX and Scene Builder.</p>
+        <section id="wino">
+            <h2>WINO – Wine Information App</h2>
+            <p>A desktop JavaFX application for organizing and displaying wine information. Features include tag-based search, review sorting, and personal notes.</p>
+        </section>
 
-    <h2 id="tempmod">Temperature Storage Module</h2>
-    <p>A modular system in C for reading and storing temperature values in embedded systems.</p>
+        <section id="tempmod">
+            <h2>Temperature Storage Module</h2>
+            <p>Low-level C module designed to store and validate temperature readings efficiently, used in embedded environments with memory constraints.</p>
+        </section>
 
-    <h2 id="hangman">IR Hangman Game</h2>
-    <p>Two-player hangman over IR communication between microcontrollers. Modular C code design.</p>
+        <section id="hangman">
+            <h2>IR Hangman Game</h2>
+            <p>Microcontroller project using IR communication for multiplayer hangman. Emphasizes modular C design and embedded programming skills.</p>
+        </section>
 
-    <h2>Contact</h2>
-    <p><a href="mailto:finnbrown427@gmail.com">Email me</a></p>
-    <p><a href="https://github.com/YOUR_GITHUB_USERNAME">GitHub</a></p>
+        <section>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:finnbrown@example.com">finnbrown@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">github.com/YOUR_GITHUB_USERNAME</a></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Finn Brown • Built with HTML & CSS
+    </footer>
 </body>
 </html>
